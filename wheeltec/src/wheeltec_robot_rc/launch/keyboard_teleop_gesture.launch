@@ -1,0 +1,6 @@
+<launch>
+  <!-- turtlebot_teleop_key already has its own built in velocity smoother -->
+  <node pkg="wheeltec_robot_rc" type="turtlebot_teleop_gesture.py" name="turtlebot_teleop_gesture"  output="screen">
+    <remap from="turtlebot_teleop_gesture/cmd_vel" to="/cmd_vel"/>
+  </node>
+</launch>
